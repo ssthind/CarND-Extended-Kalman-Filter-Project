@@ -1,15 +1,15 @@
 For connecting simulator to docker on windows 7 OS.
 
 **** On docker
-- git clone https://github.com/udacity/CarND-Extended-Kalman-Filter-Project/ ekf1
+- git clone https://github.com/udacity/CarND-Extended-Kalman-Filter-Project/ EKF1
 - cd CarND-Extended-Kalman-Filter-Project
 
 **** On HOST win-7
 -update the code in Notepad++ and then pushed to docker using below command.(Repeated until perfect good output is obtained
--docker cp "..\CarND-Extended-Kalman-Filter-Project-master\src" t2_proj:work/CarND-Extended-Kalman-Filter-Project/
+-docker cp "..\CarND-Extended-Kalman-Filter-Project-master\src" t2_proj:work/EKF1/
 
 **** On docker
--create build file in folder CarND-Extended-Kalman-Filter-Project
+-create build file in folder EKF1
 -in bulid folder: cmake .. and make.
 
 **** On HOST win-7
