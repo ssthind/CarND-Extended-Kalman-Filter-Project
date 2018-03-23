@@ -1,0 +1,21 @@
+For connecting simulator to docker on windows 7 OS.
+
+**** On docker
+- git clone https://github.com/udacity/CarND-Extended-Kalman-Filter-Project/ ekf1
+- cd CarND-Extended-Kalman-Filter-Project
+
+**** On HOST win-7
+-update the code in Notepad++ and then pushed to docker using below command.(Repeated until perfect good output is obtained
+-docker cp "..\CarND-Extended-Kalman-Filter-Project-master\src" t2_proj:work/CarND-Extended-Kalman-Filter-Project/
+
+**** On docker
+-create build file in folder CarND-Extended-Kalman-Filter-Project
+-in bulid folder: cmake .. and make.
+
+**** On HOST win-7
+-Ran in cmd prompt: netsh interface portproxy add v4tov4 listenport=4567 listenaddress=127.0.0.1 connectport=4567 connectaddress=IP_ADDRESS_OF_YOUR_INSTANCE protocol=tcp
+- open the simulator.
+
+**** On docker
+- and executing the file ./ExtendedKF
+
